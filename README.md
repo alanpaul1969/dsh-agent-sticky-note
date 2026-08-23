@@ -91,6 +91,19 @@ Any Markdown works. The convention used by our A2A pipeline:
 - ...
 ```
 
+## Agent protocol — 讓 agent 會寫便條
+
+本插件只是**唯讀顯示器**；便條的內容由你的 agent 維護。
+完整的寫入約定（檔案結構、插入格式、多 writer 共存、結案流程）見
+[**AGENT-PROTOCOL.md**](AGENT-PROTOCOL.md)。
+
+最小範例——agent 有事需要主人決策時：
+
+```bash
+sed -i "/^## ⏳ 待 Alan 決策/a - $(date +'%m-%d %H:%M') openrouter: 新版本發佈（需要：說「升級」）" \
+  ~/Desktop/DSH-便條紙.md
+```
+
 ## How it works 運作原理
 
 - **Host half** (`lib/index.js`): registers `GET /api/sticky-note` on
