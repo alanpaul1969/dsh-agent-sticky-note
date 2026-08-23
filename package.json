@@ -1,6 +1,6 @@
 {
   "name": "dsh-agent-sticky-note",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "📌 Sticky-note settings tab for DeepSeek Harness — agent notices & pending decisions visible in the Web GUI (Tailscale-friendly). Zero deps, read-only.",
   "type": "module",
   "main": "lib/index.js",
@@ -39,5 +39,12 @@
   "homepage": "https://github.com/alanpaul1969/dsh-agent-sticky-note#readme",
   "bugs": {
     "url": "https://github.com/alanpaul1969/dsh-agent-sticky-note/issues"
-  }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "AGENT-PROTOCOL.md",
+    "LICENSE"
+  ]
 }
