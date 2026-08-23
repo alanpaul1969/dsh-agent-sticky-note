@@ -1,7 +1,7 @@
 {
   "name": "dsh-agent-sticky-note",
   "version": "0.1.0",
-  "description": "DSH GUI sticky note — renders the agent's Desktop sticky-note file (pending decisions, notices, version updates) as a Settings tab, visible over Tailscale remote access.",
+  "description": "📌 Sticky-note settings tab for DeepSeek Harness — agent notices & pending decisions visible in the Web GUI (Tailscale-friendly). Zero deps, read-only.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -28,5 +28,16 @@
     "notifications",
     "deepseek-harness"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "author": {
+    "name": "alanpaul1969"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanpaul1969/dsh-agent-sticky-note.git"
+  },
+  "homepage": "https://github.com/alanpaul1969/dsh-agent-sticky-note#readme",
+  "bugs": {
+    "url": "https://github.com/alanpaul1969/dsh-agent-sticky-note/issues"
+  }
 }
