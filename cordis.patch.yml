@@ -1,0 +1,10 @@
+# dsh-sticky-note bundle patch layer.
+#
+# Contributes one host row: the plugin's own package. The Loader imports
+# `dsh-sticky-note` (resolved from the profile's node_modules), which runs the
+# Host half — the GET /api/sticky-note HTTP feed. client-modules scans the same
+# loader entry for a package declaring `dsh.client` and exports `./client`,
+# which injects the "📌 便條紙" settings section into the Web UI.
+- insert:
+    - id: sticky-note
+      name: 'dsh-sticky-note'

@@ -1,0 +1,32 @@
+{
+  "name": "dsh-sticky-note",
+  "version": "0.1.0",
+  "description": "DSH GUI sticky note — renders the agent's Desktop sticky-note file (pending decisions, notices, version updates) as a Settings tab, visible over Tailscale remote access.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "sticky-note",
+    "notifications",
+    "deepseek-harness"
+  ],
+  "license": "MIT"
+}
