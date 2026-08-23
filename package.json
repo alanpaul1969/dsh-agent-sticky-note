@@ -1,5 +1,5 @@
 {
-  "name": "dsh-sticky-note",
+  "name": "dsh-agent-sticky-note",
   "version": "0.1.0",
   "description": "DSH GUI sticky note — renders the agent's Desktop sticky-note file (pending decisions, notices, version updates) as a Settings tab, visible over Tailscale remote access.",
   "type": "module",

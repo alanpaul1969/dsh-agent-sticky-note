@@ -43,15 +43,15 @@ Web GUI 的設定分區裡。重要決策事項、通知、版本更新不再被
 ### From a local directory 從本地目錄
 
 ```bash
-git clone https://github.com/alanpaul1969/dsh-sticky-note.git
-dsh plugin --profile web add /path/to/dsh-sticky-note
+git clone https://github.com/alanpaul1969/dsh-agent-sticky-note.git
+dsh plugin --profile web add /path/to/dsh-agent-sticky-note
 systemctl --user restart dsh.service   # or restart your harness
 ```
 
 ### From GitHub 固定 commit（建議）
 
 ```bash
-dsh plugin --profile web add github:alanpaul1969/dsh-sticky-note#<40-char-commit>
+dsh plugin --profile web add github:alanpaul1969/dsh-agent-sticky-note#<40-char-commit>
 systemctl --user restart dsh.service
 ```
 
@@ -94,7 +94,7 @@ Any Markdown works. The convention used by our A2A pipeline:
 ## Uninstall 移除
 
 ```bash
-dsh plugin --profile web remove dsh-sticky-note
+dsh plugin --profile web remove dsh-agent-sticky-note
 ```
 
 ## License
