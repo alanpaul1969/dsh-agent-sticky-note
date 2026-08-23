@@ -40,6 +40,13 @@ Web GUI 的設定分區裡。重要決策事項、通知、版本更新不再被
 
 ## Install 安裝
 
+### From npm 從 npm（建議，最快）
+
+```bash
+dsh plugin --profile web add dsh-agent-sticky-note
+systemctl --user restart dsh.service
+```
+
 ### From a local directory 從本地目錄
 
 ```bash
