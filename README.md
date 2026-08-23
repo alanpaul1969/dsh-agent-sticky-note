@@ -1,4 +1,10 @@
-# dsh-sticky-note 📌
+# dsh-agent-sticky-note 📌
+
+[![DSH](https://img.shields.io/badge/DSH-0.1.1--rc.2_verified-4c6ef5)](https://github.com/deepseek-ai/deepseek-harness/releases) [![npm](https://img.shields.io/npm/v/dsh-agent-sticky-note)](https://www.npmjs.com/package/dsh-agent-sticky-note) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+![schematic](assets/screenshot.png)
+
+> 適配 DSH `0.1.1-rc.2`（開發與驗證版本；插件只用 `settings.section` slot + `ctx.webServer` 穩定 API，預期向前相容）。上圖為示意圖。
 
 [English](#english) | [中文](#中文)
 
